@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace SerialPlayer
 {
+  
     public class PlayerResponseEventArgs:EventArgs
     {
+        public string Text { get; set; }
+
         //implementar lógica de respuesta aqui
 
     }

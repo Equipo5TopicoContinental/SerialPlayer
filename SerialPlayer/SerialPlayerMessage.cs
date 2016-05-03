@@ -19,5 +19,9 @@ namespace SerialPlayer
                 return (byte)( MessageId ^ Functionallity);
             }
         }
+
+        public byte[] Bytes {
+            get { return new byte[] { MessageId, Functionallity, Checksum }; }
+        }
     }
 }
